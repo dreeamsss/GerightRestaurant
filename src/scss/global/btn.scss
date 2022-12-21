@@ -1,0 +1,17 @@
+.btn {
+    font-family: $font-family-second;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #0C0B08;
+
+    &--primary {
+        background-color: $calico;
+        padding: 8px 32px;
+
+        &:hover {
+            background-color: darken($calico, 20%);
+        }
+    }
+}

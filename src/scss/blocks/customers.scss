@@ -1,0 +1,64 @@
+.customers {
+    padding: 152px 0;
+}
+
+.customers__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 146px;
+        height: 146px;
+        position: absolute;
+        top: -200px;
+        right: -20px;
+        background-image: url("../img/global/slogan.png");
+    }
+}
+
+.customers__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 64px;
+    column-gap: 32px;
+}
+
+.customers__image {
+    margin-right: 32px;
+}
+
+.customers__item {
+    grid-column: 6 span;
+
+    display: flex;
+    align-items: center;
+}
+
+.customers__descr {
+    font-family: $font-family-first;
+    font-style: italic;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: $silver;
+    margin: 0;
+}
+
+.customers__subtitle {
+    font-family: $font-family-second;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: $calico;
+    margin: 16px 0 4px;
+}
+
+.customers__role {
+    font-family: $font-family-first;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #F5EFDB;
+}

@@ -1,0 +1,35 @@
+.user-list {
+    display: flex;
+}
+
+.user-list__item {
+    &:first-child {
+        margin-right: 100px;
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 57px;
+            width: 1px;
+            // background-color: #fff;
+            background: radial-gradient(circle at center, #fff, #000);
+            position: absolute;
+            top: calc(50% - 57px / 2);
+            right: -50px;
+        }
+    }
+}
+
+.user-list__link {
+    font-family: $font-family-first;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: $white;
+
+    &:hover {
+        color: $calico;
+    }
+}

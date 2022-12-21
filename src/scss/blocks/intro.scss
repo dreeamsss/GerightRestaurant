@@ -1,0 +1,89 @@
+.intro {
+    min-height: 1067px;
+    height: 1px;
+    background-color: transparent;
+}
+
+.intro__container-xl {
+    height: 100%;
+    position: relative;
+}
+
+.intro__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.intro__overhead {
+    font-family: $font-family-second;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: $white;
+    margin: 0;
+}
+
+.intro__content {
+    margin-right: 173px;
+    flex-shrink: 0;
+}
+
+.intro__title {
+    font-family: $font-family-second;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 117px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: $calico;
+    max-width: 460px;
+    margin: 25px 0 32px;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -18px;
+        left: 0;
+        background-image: url("../img/global/overhead-after.svg");
+        background-repeat: no-repeat;
+        height: 10px;
+        width: 40px;
+    }
+}
+
+.intro__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: $silver;
+    max-width: 453px;
+    margin-bottom: 32px;
+}
+
+.intro__img {
+    max-width: 667px;
+    img {
+        width: 667px;
+    }
+}
+
+.intro__container {
+    display: flex;
+    align-items: center;
+}
+
+.intro__overhead-icon {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    margin-top: 8px;
+}

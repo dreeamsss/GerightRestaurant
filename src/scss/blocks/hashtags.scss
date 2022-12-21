@@ -1,0 +1,21 @@
+.hashtags {
+    transform: rotate(-90deg);
+    display: flex;
+    position: absolute;
+    top: calc(50% - 152px / 2);
+    left: -55px;
+}
+
+.hashtags__item {
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.hashtags__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    color: $white;
+}

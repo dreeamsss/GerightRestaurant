@@ -1,0 +1,19 @@
+.animation-right-invisible {
+    transform: translate(500px, 0px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.animation-left-invisible {
+    transform: translate(-500px, 0px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.animation-visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: visibility 0.7s ease-in-out, opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+

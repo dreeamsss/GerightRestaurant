@@ -1,0 +1,68 @@
+.quote {
+    background-image: url("../img/global/primary-bg.jpg");
+    background-repeat: no-repeat;
+    padding: 128px 0;
+    background-size: cover;
+}
+
+.quote__title {
+    &::before {
+        left: 0;
+        top: -16px;
+    }
+}
+
+.quote__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote__image {
+    margin-right: 30px;
+    img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+} 
+
+.quote__gist {
+    margin: 0;
+}
+
+.quote__text {
+    margin: 0 0 64px;
+
+    font-family: $font-family-first;
+    font-style: italic;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: $silver;
+    max-width: 580px;
+}
+
+.quote__author-name {
+    font-family: $font-family-second;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: $calico;
+}
+
+.quote__author-role {
+    font-family: $font-family-first;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: $silver;
+}
+
+.quote__signature {
+    font-family: $font-family-third;
+    font-size: 64px;
+    line-height: 83px;
+    letter-spacing: 0.04em;
+    color: $white;
+    margin: 64px 0 0;
+}

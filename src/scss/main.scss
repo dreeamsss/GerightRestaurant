@@ -1,0 +1,28 @@
+
+// GLOBAL
+@import "./global/fonts";
+@import "./global/variables";
+@import "./global/base";
+@import "./global/settings";
+@import "./global/btn";
+@import "./global/scrollAnimation";
+
+// VENDOR
+@import "./vendor/swiper.min";
+
+// BLOCKS
+@import "./blocks/header";
+@import "./blocks/site-list";
+@import "./blocks/user-list";
+@import "./blocks/intro";
+@import "./blocks/hashtags";
+@import "./blocks/about-us";
+@import "./blocks/order";
+@import "./blocks/menu";
+@import "./blocks/special";
+@import "./blocks/quote";
+@import "./blocks/customers";
+@import "./blocks/video";
+@import "./blocks/laurels";
+@import "./blocks/updates";
+@import "./blocks/gallery";

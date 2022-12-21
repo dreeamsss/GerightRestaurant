@@ -1,0 +1,127 @@
+.order {
+    padding: 150px 0;
+}
+
+.order__container {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 146px;
+        width: 146px;
+        top: -176px;
+        right: -110px;
+        background-image: url("../img/global/slogan.png");
+    }
+}
+
+.order__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $cod;
+    border: 1px solid rgba(220, 202, 135, 0.2);
+    box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+    width: 100%;
+
+    padding: 48px 32px;
+}
+
+.order__content {
+    text-align: center;
+}
+
+.order__overhead {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: $white;
+    margin: 0 0 25px;
+}
+
+.order__form {
+    margin: 0 0 64px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 48px;
+}
+
+.order__label {
+    input {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #F5EFDB;
+        background-color: transparent;
+        color: $silver;
+        padding: 16px;
+        position: relative;
+        z-index: 0;
+
+        &::-webkit-calendar-picker-indicator{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            height: auto;
+            color: transparent;
+            background: transparent;
+        }
+
+        &::-webkit-datetime-edit-fields-wrapper {
+            font-family: 'Cormorant Upright';
+            font-weight: 600;
+            font-size: 20px;
+            letter-spacing: 0.04em;
+            text-transform: capitalize;
+        }
+
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: calc(50% - 12px);
+            right: 16px;
+            background-image: url("../img/global/arrow.svg");
+            background-repeat: no-repeat;
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    select {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #F5EFDB;
+        background-color: $cod;
+        color: $silver;
+        padding: 16px;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        position: relative;
+    }
+}
+
+.order__label[for=orderPersons] {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 12px);
+        right: 16px;
+        background-image: url("../img/global/arrow.svg");
+        background-repeat: no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+}

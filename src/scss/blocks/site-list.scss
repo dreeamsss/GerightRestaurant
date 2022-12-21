@@ -1,0 +1,22 @@
+.site-list {
+    display: flex;
+}
+
+.site-list__item {
+    &:not(:last-child) {
+        margin-right: 32px;
+    }
+}
+
+.site-list__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: $white;
+
+    &:hover {
+        color: $calico;
+    }
+}

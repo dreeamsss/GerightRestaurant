@@ -1,0 +1,68 @@
+.laurels {
+    padding: 130px 0;
+    background-image: url("../img/global/primary-bg.jpg");
+}
+
+.laurels__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.laurels__title {
+    max-width: 630px;
+    &::before {
+        left: 0;
+    }
+}
+
+.laurels__col {
+    &:first-child {
+        margin-right: 50px;
+        width: 634px;
+    }
+}
+
+.laurels__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 64px 32px;
+}
+
+.laurels__food-img {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: -72px;
+        width: 360px;
+        height: 379px;
+        background-image: url("../img/laurels/laurels-G.png");
+    }
+}
+
+.laurels__item {
+    grid-column: 3 span;
+
+    display: flex;
+    align-items: center;
+}
+
+.laurels__image {
+    margin-right: 32px;
+}
+
+.laurels__subtitle {
+    font-family: $font-family-second;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: $calico;
+    margin: 0 0 8px;
+}
